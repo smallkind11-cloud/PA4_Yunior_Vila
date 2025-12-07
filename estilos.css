@@ -1,15 +1,63 @@
-/* Hero */
+/* HERO / BANNER */
 .hero {
-  background: url('../img/banner.jpg') center/cover no-repeat;
-  height: 70vh;
-}
-
-/* Accesibilidad */
-:focus {
-  outline: 3px solid #ffdf00;
+    background: url('img/banner.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
 }
 
 /* General */
 body {
-  line-height: 1.6;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Botón principal */
+.btn-primary {
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* NAVBAR */
+.navbar {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+/* Accesibilidad */
+:focus {
+    outline: 3px solid #ffdf00;
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        text-align: center;
+        padding: 20px;
+    }
 }
