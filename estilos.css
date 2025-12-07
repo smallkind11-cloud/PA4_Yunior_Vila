@@ -1,0 +1,15 @@
+/* Hero */
+.hero {
+  background: url('../img/banner.jpg') center/cover no-repeat;
+  height: 70vh;
+}
+
+/* Accesibilidad */
+:focus {
+  outline: 3px solid #ffdf00;
+}
+
+/* General */
+body {
+  line-height: 1.6;
+}
